@@ -1,0 +1,17 @@
+apiVersion: 1.0.0
+metadata:
+  name: alessio-hello
+components:
+  - alias: vscode-xml
+    type: chePlugin
+    id: redhat/vscode-xml/latest
+  - alias: java
+    type: chePlugin
+    id: redhat/java/latest
+  - alias: hello-world
+    type: dockerimage
+    image: hello-world
+    command:
+      - sleep
+    args:
+      - infinity
